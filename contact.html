@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | ApexLaunchMarketing</title>
+  <meta name="description" content="Contact ApexLaunchMarketing about your crowdfunding campaign — strategy, preparation, marketing, and audience development. Email, WhatsApp, or send a message." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://apexlaunchmarketing.online/contact.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact | ApexLaunchMarketing" />
+  <meta property="og:description" content="Reach out to discuss your crowdfunding campaign." />
+  <meta property="og:url" content="https://apexlaunchmarketing.online/contact.html" />
+  <meta property="og:site_name" content="ApexLaunchMarketing" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="ApexLaunchMarketing home">
+        <span class="logo-mark" aria-hidden="true">A</span>
+        <span class="logo-text">Apex<span>Launch</span>Marketing</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="crowdfunding.html">Crowdfunding</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="success-stories.html">Success Stories</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm">Start Your Campaign</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's Talk About Your Campaign</h1>
+        <p class="lead">Whether you are preparing for launch, already running a campaign, or simply trying to understand the crowdfunding process, reach out to discuss your project.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <aside class="contact-info reveal">
+          <h2>Get in Touch</h2>
+          <p>Email is usually the fastest way to reach us. WhatsApp works well for quick questions.</p>
+
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:contact@apexlaunchmarketing.online">contact@apexlaunchmarketing.online</a></p>
+            <a class="btn btn-outline btn-sm" href="mailto:contact@apexlaunchmarketing.online">Email Us</a>
+          </div>
+
+          <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/16722265365" target="_blank" rel="noopener noreferrer">+1 672 226 5365</a></p>
+            <a class="btn btn-primary btn-sm" href="https://wa.me/16722265365" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          </div>
+
+          <div class="contact-card contact-note">
+            <h3>Before You Send</h3>
+            <p>A short note about your project, your timeline, and the platform you are considering helps us respond usefully.</p>
+          </div>
+        </aside>
+
+        <div class="contact-form-wrap reveal">
+          <h2>Send a Message</h2>
+          <p class="muted">
+            This form is a static HTML form. It is not connected to a backend yet.
+            To enable submissions, connect it to a form service (for example Formspree, Basin, or a Cloudflare Worker)
+            by setting the <code>action</code> attribute on the form element below.
+          </p>
+
+          <!-- ============================================================
+               STATIC FORM — NOT CONNECTED TO A BACKEND
+               To connect later:
+                 1. Replace action="" with your form service endpoint.
+                 2. Ensure method="POST" is set.
+                 3. Remove the data-static-form="true" attribute.
+               ============================================================ -->
+          <form
+            id="contactForm"
+            class="contact-form"
+            action=""
+            method="POST"
+            data-static-form="true"
+            data-fallback-email="contact@apexlaunchmarketing.online"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Name <span aria-hidden="true">*</span></label>
+                <input id="cf-name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+                <input id="cf-email" name="email" type="email" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-campaign">Campaign / Project Name</label>
+                <input id="cf-campaign" name="campaign" type="text" autocomplete="off" />
+              </div>
+              <div class="form-field">
+                <label for="cf-platform">Crowdfunding Platform</label>
+                <input id="cf-platform" name="platform" type="text" placeholder="e.g. Kickstarter, Indiegogo, GoFundMe" autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="cf-stage">Campaign Stage</label>
+                <select id="cf-stage" name="stage">
+                  <option value="">Select a stage</option>
+                  <option value="Planning">Planning</option>
+                  <option value="Pre-Launch">Pre-Launch</option>
+                  <option value="Currently Live">Currently Live</option>
+                  <option value="Post-Campaign">Post-Campaign</option>
+                  <option value="Just Exploring Crowdfunding">Just Exploring Crowdfunding</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="cf-message" name="message" rows="6" required></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-note muted">We typically reply by email.</p>
+            </div>
+
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">A</span>
+          <span class="logo-text">Apex<span>Launch</span>Marketing</span>
+        </a>
+        <p class="footer-desc">Crowdfunding strategy, marketing, and resources for creators building campaigns with purpose.</p>
+        <div class="social-row" aria-label="Social media links">
+          <a href="#" class="social-link" data-social="facebook" aria-label="Facebook (placeholder link)">Facebook</a>
+          <a href="#" class="social-link" data-social="instagram" aria-label="Instagram (placeholder link)">Instagram</a>
+          <a href="#" class="social-link" data-social="linkedin" aria-label="LinkedIn (placeholder link)">LinkedIn</a>
+          <a href="#" class="social-link" data-social="x" aria-label="X / Twitter (placeholder link)">X / Twitter</a>
+          <a href="#" class="social-link" data-social="youtube" aria-label="YouTube (placeholder link)">YouTube</a>
+          <a href="#" class="social-link" data-social="tiktok" aria-label="TikTok (placeholder link)">TikTok</a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="crowdfunding.html">Crowdfunding</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="success-stories.html">Success Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@apexlaunchmarketing.online">contact@apexlaunchmarketing.online</a></li>
+          <li><a href="https://wa.me/16722265365" target="_blank" rel="noopener noreferrer">WhatsApp: +1 672 226 5365</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 ApexLaunchMarketing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
